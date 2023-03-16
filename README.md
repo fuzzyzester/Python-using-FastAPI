@@ -27,7 +27,7 @@ main.py
 #main.py file and import the necessary packages:
 
 
-# create the CRUD (Create, Read, Update, Delete) functionality for the book library app.
+create the CRUD (Create, Read, Update, Delete) functionality for the book library app.
 
 
 5. Create the following files inside the project directory:

@@ -8,10 +8,10 @@
 I eventually decided to use FastAPI instead of Django. I used first a fake database to test if the routes are working as it should be thru Swagger UI. Once everything was set up I then created a real database and connect it to the app. Lastly I successfully seeded a Json file containing sample data to the database. 
 
 1. create a new virtual environment
-		python -m venv env
+	python -m venv env
 
-	activate environment
-		env\Scripts\activate
+   activate environment
+	env\Scripts\activate
 		
 2.install required packages
 

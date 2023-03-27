@@ -29,7 +29,7 @@ def print_menu():
 
 
 def add_book():
-    print("Add book")
+    print("Add a book")
     title = input("Book title: ")
     author = input("Book author: ")
     new_book = Item(title=title, author=author)
@@ -38,7 +38,7 @@ def add_book():
 
 
 def get_books():
-    print("Get list of books")
+    print("Get the book list")
     res = requests.get(url("/list-books"))
     data = res.json()
     books = data.get('books')
@@ -53,8 +53,8 @@ def get_books():
 
 
 def delete_book():
-    print("Delete book")
-    book_id = input("ID of book you wish to delete: ")
+    print("Delete a book")
+    book_id = input("ID of the book you wish to delete: ")
     if not str.isdigit(book_id):
         print("IDs are integers")
         return
@@ -89,7 +89,7 @@ def update_book():
 
 def main():
     print_menu()
-    choice = input("Please choose your action: ")
+    choice = input("What do you like to do? Please enter the number of your choice. ")
     choice = choice.strip()
     if not str.isdigit(choice):
         print("Please enter a valid option")
